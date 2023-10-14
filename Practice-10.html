@@ -1,0 +1,65 @@
+
+<!--
+    Here, we will practice of embedding images into our webpage,
+We have tried  many ways of embedding images, and the sizes of images,
+and where to place the images etc. 
+We have also tried to add a link to an image and make the image
+float to the left side of the text or to the right side
+-->
+
+<!DOCTYPE html>
+<html lang="us-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in HTML</title>
+  
+    <style>
+        hr
+        {
+            height: 10px;
+            color: black;
+            border: 3px solid red;
+            width: 50%;
+            text-align: center;
+            background-color: purple;
+        }
+    </style>
+  
+</head>
+  
+<body>
+    <h1>Images in HTML</h1><br><br>
+    <img src="E:\My NFTs\Final\images2\133.png" alt="Cute Mouse">This is an image with only alternate text<br><hr>
+    <img src="E:\My NFTs\Final\images2\133.png" alt="Cute Mouse" width="50px" height="50px">this is an image with alternate text, height and width attributes<br><hr>
+    <img src="E:\My NFTs\Final\images2\133.png" alt="Cute Mouse" style="width: 40px; height: 60px;">this is an image with alternate text, and the width and height properties of the css attribute <br><hr>
+    <img src="E:\My NFTs\Final\images2\133.png" alt="Cute Mouse" style="left: right;" width="500px" height="30%">this is the image with alternate text and the float, height and width properties of the style attribute <br><hr>
+    <a href="first.html" target="_blank"><img src="E:\My NFTs\Final\images2\133" alt="Cute Mouse" ></a>this is an image linked with a link and with only alternate attribute <br><br><hr>
+        <img src="E:\My NFTs\Final\images2\133.png" alt="Cute Mouse" align="center"> This is an image with broken link and with an alternate text
+    <br><br><br>
+  
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis a nemo, consectetur tempora quae quaerat aut possimus tempore quidem facilis pariatur explicabo quam. Ab tempora repellat non officiis ullam beatae voluptas, quaerat exercitationem officia cumque earum et distinctio voluptatem suscipit dicta quisquam eum cum dolor voluptates ipsam quasi blanditiis temporibus accusantium modi? <br>Veniam amet deserunt praesentium ducimus debitis vitae dolorem velit? Nam fugit laudantium deleniti accusamus laboriosam quisquam maiores architecto dolore? Cupiditate praesentium dolor nihil, accusamus quod voluptas, pariatur quasi reiciendis sit veniam odio? Ipsum vero consectetur deserunt error quas, porro aspernatur temporibus at corrupti minima quae aliquid soluta veritatis.
+    </p><br><br><br>
+  
+    <!--
+        image map along with area tags are used to create,
+        multiple image clickable area, where a click on each area means a diferent action...
+        the values of some of their attributes are to be simiiar.
+    -->
+  
+    <img src="E:\My NFTs\Final\images2\133.png" alt="A mouse promtion post image" usemap="#javed">
+    <map name="javed">
+        <area shape="rect" coords="32, 120, 414, 406" href="https://mullaghori.cent.co/" alt="A cute mice" target="_blank">
+        <area shape="circle" coords="858, 407, 10" href="form firt.html" alt="clock">
+        <area shape="" coords="" href="" alt="">
+        <area shape="" coords="" href="" alt="">
+        <area shape="" coords="" href="" alt="">
+    </map>
+  
+    <!--
+        Another tag is <picture></picture> tag is there, this tag is used to use different types of images priority wise. The first suitable image for the browser iws to be used, by default..
+    -->
+
+</body>
+</html>
